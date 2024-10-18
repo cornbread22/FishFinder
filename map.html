@@ -80,8 +80,8 @@
 
         // Event listener for clicking on the marker
         marker.on('click', function () {
-            const action = prompt("Type 'rename' to change the name or 'remove' to delete this spot:");
-            if (action === 'rename') {
+            const action = prompt("Type 'r' to change the name or 'd' to delete this spot:");
+            if (action === 'r') {
                 const newName = prompt("Enter the new name for this fishing spot:", spot.name);
                 if (newName) {
                     spot.name = newName;
@@ -89,7 +89,7 @@
                     // Update localStorage
                     localStorage.setItem('fishingSpots', JSON.stringify(storedSpots));
                 }
-            } else if (action === 'remove') {
+            } else if (action === 'd') {
                 if (confirm("Are you sure you want to remove this fishing spot?")) {
                     // Remove the marker from the map
                     map.removeLayer(marker);
