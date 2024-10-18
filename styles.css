@@ -14,6 +14,10 @@ h1 {
   font-family: "Courier New", Courier, monospace;
   color: white;
 }
+.gsc-control-cse {
+  width: 85dvw !important;
+  margin: 0 auto;
+}
 h2 {
   font-size: 2rem;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
