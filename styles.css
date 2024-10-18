@@ -25,8 +25,8 @@ h2 {
     Segoe UI Symbol;
   background: inherit;
   background-clip: text;
-  color: transparent;
-  filter: invert(1) grayscale(1) contrast(9);
+  color: white;
+  
 }
 a {
   font-size: 2rem;
